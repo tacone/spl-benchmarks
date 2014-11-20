@@ -7,7 +7,8 @@
  * use.
  */
 
-define('PHP_CGI_PATH', basename($_ENV['_']) === 'php-cgi' ? $_ENV['_'] : dirname($_ENV['_']) . '/php-cgi');
+//define('PHP_CGI_PATH', basename($_ENV['_']) === 'php-cgi' ? $_ENV['_'] : dirname($_ENV['_']) . '/php-cgi');
+define('PHP_CGI_PATH', '/usr/bin/php5-cgi -n ');
 define('EXECUTIONS', 50);
 
 $elements = array(10, 100, 500, 1000, 5000);
